@@ -1,0 +1,7 @@
+apiversion: v1
+kind: Namespace
+metadata:
+  name: raghu_roboshop
+  lables:
+    project: raghu_roboshop
+    environment: dev
