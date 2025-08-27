@@ -27,4 +27,45 @@ spec:
       storage: 15Gi
 
 ---
+apiVersion: v1
+kind: pod
+metadata:
+  name: nginx
+  labels:
+    purpose: ebs-static-demo
+    project: roboshop
+spec:
+  nodeSelector:
+    topology.kubernetes.io/zone: us-east-1c
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts: # docker run -v host-path:container-path
+    - name: perstistant-storage
+      mountPath: /usr/share/nginx/html
+  volumes:
+  - name: perstistant-storage
+    PersistantVolumeCliam:
+      claimeName: ebs-static
+
+---
+apiversion: v1
+kind: Service
+metadata:
+  name: ebs-static
+  lables:
+    purpose: ebs-static-demo
+    project: roboshop
+spec:
+  type: LoadBalencer
+  selector:
+    purpose: ebs-static-demo
+    project: roboshop
+  ports:
+  - protocol: TCP
+    port: 80 # service port
+    targetPort: 80 # container port
+    
+
+
 
