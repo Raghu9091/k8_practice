@@ -46,3 +46,5 @@ spec:
     - protocol: TCP
       port: 80 # service port
       targetPort: 80 # container port
+
+#showing the info nginx
