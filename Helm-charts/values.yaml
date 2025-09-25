@@ -1,0 +1,6 @@
+# frequantly changes kept here
+deployment:
+  replicas: 4
+  imageVersion: stable-otel
+service:
+  targetPort: 80
