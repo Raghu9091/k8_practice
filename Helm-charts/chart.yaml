@@ -1,0 +1,5 @@
+apiversion: v2
+name: nginx
+version:1.0.0 #chart vesrion
+description: nginx helm chart description
+appVersion:1.0.1 #app version
