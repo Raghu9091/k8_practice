@@ -26,3 +26,6 @@ spec:
       containers:
       - name: nginx
         image: nginx:{{ .Values.deployment.imageVersion }}
+# observer chats
+# helm list
+# revision -- description "interview writing anything why use this"
