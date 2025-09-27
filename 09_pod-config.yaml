@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: env-ConfigMap
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      envFrom: 
+        - configMapRef: 
+            name: pod-config
+
+# we try to keep the configuration outside of pod definition. i.e configmap
+# 
