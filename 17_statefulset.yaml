@@ -9,7 +9,7 @@ spec:
   ports:
   - port: 80
     name: web
-  clusterIP: None
+  clusterIP: None # headless service nodeport is none
   selector:
     purpose: statefulset
     project: roboshop
