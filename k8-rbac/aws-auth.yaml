@@ -17,4 +17,5 @@ metadata:
   creationTimestamp: "2025-08-06T01:47:38Z"
   name: aws-auth
   namespace: kube-system
+  # version is optional evry update is change the version number
   uid: 7c47ebd8-d158-4e4e-b0e3-dce2584f27a6
