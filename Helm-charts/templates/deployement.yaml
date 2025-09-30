@@ -15,7 +15,7 @@ spec:
       purpose: deployment-demo
       project: roboshop
       app: nginx
-  # This is pod definition
+  # This is  pod definition
   template:
     metadata:
       labels:
