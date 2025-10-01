@@ -8,7 +8,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      name: fluentd-elasticsearch
+      name: fluentd-elasticsearch # demonstrate" typically refers to the Deployment object and its capabilities in managing and orchestrating applications.
   template:
     metadata:
       labels:
