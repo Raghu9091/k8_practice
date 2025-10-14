@@ -45,3 +45,5 @@ spec:
       - name: varlog
         hostPath:
           path: /var/log
+# A DaemonSet is a Kubernetes controller that ensures a copy of a specific Pod runs on all (or some) 
+# nodes in a cluster.
