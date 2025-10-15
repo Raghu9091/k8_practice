@@ -16,3 +16,6 @@ Provides a stable virtual IP (ClusterIP) for a set of Pods.
 * ExternalName – Maps service to an external DNS name.
 
 ![alt text](k8-service.svg)
+
+# sidecar Containers
+Sidecar containers are the secondary containers that run along with the main application container within the same Pod.
