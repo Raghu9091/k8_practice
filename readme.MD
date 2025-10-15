@@ -19,3 +19,10 @@ Provides a stable virtual IP (ClusterIP) for a set of Pods.
 
 # sidecar Containers
 Sidecar containers are the secondary containers that run along with the main application container within the same Pod.
+
+# Some typical uses of a DaemonSet are:
+A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster,
+
+* running a cluster storage daemon on every node
+* running a logs collection daemon on every node
+* running a node monitoring daemon on every node
