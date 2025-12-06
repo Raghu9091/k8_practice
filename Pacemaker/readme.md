@@ -135,7 +135,7 @@ sudo crm status
 You should see that the VIP has moved the serviving node
 
 
-
+![alt text](image.png)
 ==============
 
 ref : Linux Nginx Set-up
