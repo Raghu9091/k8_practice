@@ -28,6 +28,8 @@ spec:
   selector:
     purpose: statefulset
     project: roboshop
+
+
 ---
 apiVersion: apps/v1
 kind: StatefulSet
