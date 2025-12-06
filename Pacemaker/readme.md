@@ -101,8 +101,7 @@ sudo systemctl start pacemaker
 Create a Resource Agent Pacemaker manages resources using resource agents. To create a simple resource agent for a virtual IP (VIP) address, create a file like vip.sh:
 
 ```
-sudo nano /usr/local/bin/vip.sh
-sudo chmod +x /usr/local/bin/vip.sh
+sudo nano /usr/local/bin/vip.sh && chmod +x /usr/local/bin/vip.sh
 ```
 Add the following content and make the script executable:
 ```
